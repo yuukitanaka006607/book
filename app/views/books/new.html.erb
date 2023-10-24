@@ -1,3 +1,15 @@
+<h1>Books</h1>
+
+<% @books.each do |book| %>
+<p>Title</p>
+<span><%= book.title %></span>
+<p>Body</p>
+<span><%= book.body %></span>
+<a href="/books/show">Show</a>
+<a href="/books/edit">Edit</a>
+<a href="">Destroy</a>
+<% end %>
+
 <h1>New Book</h1>
 
 <%= form_with model: @book do |f| %>
